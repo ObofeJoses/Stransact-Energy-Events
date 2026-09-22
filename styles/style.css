@@ -237,3 +237,143 @@ main {
     margin-top: 26px;
 }
 
+/* ------------------- Webinar Section------------------------------- */
+
+/* --- General Section Typography & Headings --- */
+#webinar h2 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--deep);
+    margin-bottom: 16px;
+}
+
+#webinar p.lead {
+    font-size: 1.25rem;
+    color: var(--ink);
+    max-width: 65ch;
+    margin-bottom: 40px;
+}
+
+/* --- Metadata / Key-Value Grid (.facts) --- */
+.facts {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+    gap: 12px 56px;
+    margin-top: 36px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.facts div {
+    display: flex;
+    flex-direction: column;
+}
+
+.facts dt {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--graphite);
+    margin-bottom: 4px;
+}
+
+.facts dd {
+    font-weight: 700;
+    color: var(--ink);
+    font-size: 1.125rem;
+}
+
+/* --- Two-Column Layout (.cols) --- */
+.cols {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 64px;
+    margin-top: 56px;
+}
+
+.cols h3 {
+    font-family: var(--serif);
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--green);
+    margin-bottom: 24px;
+}
+
+/* Feature Segments (.seg) --- */
+.seg {
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+}
+
+.seg:last-of-type {
+    border-bottom: none;
+    margin-bottom: 32px;
+}
+
+.seg b {
+    display: block;
+    font-size: 1.15rem;
+    color: var(--ink);
+    margin-bottom: 6px;
+}
+
+.seg p {
+    color: var(--graphite);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Call To Action Row inside Webinar Section --- */
+.cta-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.cta-row .note {
+    font-size: 0.875rem;
+    color: var(--graphite);
+    line-height: 1.4;
+}
+
+/* --- Panel List (.panel) --- */
+.panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.panel li {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+}
+
+.panel li:last-child {
+    border-bottom: none;
+}
+
+.panel li b {
+    font-size: 1.05rem;
+    color: var(--ink);
+}
+
+.panel li span {
+    font-size: 0.925rem;
+    color: var(--graphite);
+}
+
+/* Dynamic attribute indicator matching HTML */
+.panel li span[data-todo="firm"] {
+    font-style: italic;
+}
+

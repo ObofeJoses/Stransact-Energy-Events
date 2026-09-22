@@ -113,3 +113,124 @@ section {
 main {
   padding-top: 84px;
 }
+
+/* --- Base Layout Utilities --- */
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --- Button Utilities --- */
+.btn {
+    display: inline-block;
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 14px 26px;
+    border-radius: 3px;
+    border: 2px solid var(--green);
+    background: var(--green);
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Standard/Dark Button */
+.btn {
+    background-color: #0b1d3a;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #17325c;
+    color: #ffffff;
+}
+
+/* Light Variant (Used inside Hero Cards) */
+.btn.light {
+    background-color: #ffffff;
+    color: #0b1d3a;
+    border-color: #ffffff;
+}
+
+.btn.light:hover {
+    background-color: #f0f4f8;
+    border-color: #f0f4f8;
+    color: #0b1d3a;
+}
+
+/* --- Hero Section Outer Container --- */
+.hero {
+    background-color: var(--deep);
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(44px, 7vw, 88px);
+    line-height: 1.03;
+    letter-spacing: -.01em;
+    max-width: 18ch;
+}
+
+.hero p.lead {
+    color: var(--tint);
+    font-size: 21px;
+    max-width: 62ch;
+    margin-top: 16px;
+}
+
+/* --- Hero Action Cards Pair --- */
+.hero .pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 64px;
+    border-top: 1px solid rgba(213, 226, 200, .35);
+}
+
+/* Individual Action Card */
+.hero .pair > div {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 40px 40px 48px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero .pair > div:first-child {
+    border-right: 1px solid rgba(213, 226, 200, .35);
+}
+
+.hero .pair .date {
+    font-family: var(--serif);
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1;
+    color: var(--white);
+}
+
+.hero .pair .what {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+.hero .pair p {
+   color: var(--tint);
+    margin-top: 8px;
+    max-width: 40ch;
+}
+
+.hero .pair .btn {
+    background: var(--white);
+    color: var(--deep);
+    border-color: var(--white);
+    margin-top: 26px;
+}
+
+.hero .pair div:last-child {
+    padding-left: 40px;
+}

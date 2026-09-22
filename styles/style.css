@@ -67,7 +67,7 @@ section {
   scroll-margin-top: 84px;
 }
 
-/* Header & Navigation */
+/* -------------------------------Header & Navigation--------------------------------------- */
 .site-header {
   position: fixed;
   top: 0;
@@ -159,7 +159,7 @@ main {
     color: var(--deep);
 }
 
-/* --- Hero Section Outer Container --- */
+/* --- ------------------------Hero Section Outer Container --------------------------- */
 .hero {
     background-color: var(--deep);
     color: var(--white) ;
@@ -204,6 +204,10 @@ main {
     border-right: 1px solid rgba(213, 226, 200, .35);
 }
 
+.hero .pair div:last-child {
+    padding-left: 40px;
+}
+
 .hero .pair .date {
     font-family: var(--serif);
     font-size: clamp(40px, 5vw, 64px);
@@ -233,6 +237,3 @@ main {
     margin-top: 26px;
 }
 
-.hero .pair div:last-child {
-    padding-left: 40px;
-}

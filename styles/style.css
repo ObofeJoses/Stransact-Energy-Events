@@ -66,3 +66,50 @@ section {
   border-bottom: 1px solid var(--line);
   scroll-margin-top: 84px;
 }
+
+/* Header & Navigation */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  min-height: 84px;
+  padding: 16px 32px;
+  background: var(--white);
+  box-shadow: 0 1px 0 var(--line);
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.site-header .logo img {
+  max-height: 46px;
+  width: auto;
+}
+
+.main-navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.main-navigation a {
+  font-weight: 700;
+  color: var(--deep);
+  transition: color 0.2s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus-visible {
+  color: var(--green);
+}
+
+main {
+  padding-top: 84px;
+}

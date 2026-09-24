@@ -590,9 +590,7 @@ main {
     margin-top: 12px;
 }
 
-/* ==========================================================================
-   FEATURE 6: Register Section & Form Styling
-   ========================================================================== */
+/* ---------------------------------- FEATURE 6: Register Section & Form Styling-------------------------------*/
 
 #register {
     background: var(--deep);
@@ -810,3 +808,111 @@ fieldset.full legend {
     font-size: 17px;
 }
 
+/* ==========================================================================
+   FEATURE 7: FAQ Section & Site Footer
+   ========================================================================== */
+
+/* --- FAQ Section Outer Container --- */
+#faq {
+    padding: 84px 0;
+    background-color: var(--white);
+}
+
+#faq h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(32px, 4.2vw, 46px);
+    line-height: 1.12;
+    color: var(--deep);
+}
+
+/* --- Accordion Container (.faq) --- */
+.faq {
+   margin-top: 40px;
+    border-top: 1px solid var(--line);
+    max-width: 860px;
+}
+
+/* Individual Accordion Item (<details>) */
+.faq details {
+    border-bottom: 1px solid var(--line);
+    padding: 18px 0;
+    transition: background-color 0.2s ease;
+}
+
+.faq details[open] {
+    background-color: var(--white);
+}
+
+/* Accordion Header (<summary>) */
+.faq summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    list-style-position: inside;
+}
+
+.faq summary::-webkit-details-marker {
+    display: none; /* Hide default WebKit marker */
+}
+
+/* Accordion Body Content (<p>) */
+.faq p {
+    margin-top: 10px;
+    color: var(--graphite);
+    max-width: 70ch;
+}
+
+
+/* ==========================================================================
+   SITE FOOTER
+   ========================================================================== */
+
+footer {
+    background: var(--wash);
+    padding: 48px 0;
+    font-size: 16px;
+    color: var(--graphite);
+}
+
+footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 ;
+}
+
+footer img {
+    height: 44px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+footer .address {
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer a {
+    color: var(--green);
+    text-decoration: underline;
+    font-size: 18px;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: var(--tint);
+}
+
+footer span[data-phone] {
+    display: inline-block;
+    color: var(--ink);
+    font-size: 18px;
+    margin: 6px 0;
+}

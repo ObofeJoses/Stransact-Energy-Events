@@ -448,3 +448,365 @@ main {
     background: var(--green);
 }
 
+/* -------------------------------FEATURE 5: Programme Outline Section---------------------- */
+
+/* --- Section Headings --- */
+#programme h2 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 4.2vw, 46px);
+    font-weight: 400;
+    line-height: 1.12;
+    color: var(--deep);
+}
+
+#programme p.lead {
+    font-size: 21px;
+    max-width: 62ch;
+    margin-top: 16px;
+    color: var(--ink);
+}
+
+/* --- Daily Schedule Breakdown (.days) --- */
+.days {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 48px;
+    border-top: 2px solid var(--deep);
+}
+
+.day {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.day:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Day Badge/Sidebar (.d) */
+.day .d {
+    font-family: var(--serif);
+    font-size: 30px;
+    line-height: 1.1;
+    color: var(--deep);
+}
+
+.day .d small {
+    display: block;
+    font-family: var(--sans);
+    font-size: 16px;
+    color: var(--graphite);
+    margin-top: 6px;
+}
+
+/* Content Area inside Day */
+.day h3 {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--green);
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.day ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.day li {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink);
+    padding: 5px 0;
+    max-width: 74ch;
+    font-size: 18px;
+}
+
+.day li::before {
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--green);
+}
+
+.day li b {
+    color: var(--ink);
+}
+
+/* Special styling for Friday Park Excursion */
+.day.park {
+    background: linear-gradient(90deg, rgba(169, 106, 18, .07), rgba(169, 106, 18, 0));
+    padding-left: 16px;
+    margin-left: -16px;
+}
+
+.day.park .d {
+    color: var(--ochre);
+}
+
+.day.park h3 {
+    color: var(--ochre);
+}
+
+/* --- Venue Block (.venue) --- */
+.venue {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    margin-top: 48px;
+}
+
+.venue h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--green);
+}
+
+.venue p {
+    margin-top: 12px;
+    max-width: 52ch;
+    font-size: 18px;
+}
+
+.venue p b {
+    color: var(--deep);
+}
+
+.venue p + p {
+    margin-top: 12px;
+}
+
+/* ==========================================================================
+   FEATURE 6: Register Section & Form Styling
+   ========================================================================== */
+
+#register {
+    background: var(--deep);
+    color: var(--white);
+    padding: 84px 0;
+}
+
+/* --- Section Headings --- */
+#register h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(32px, 4.2vw, 46px);
+    line-height: 1.12;
+}
+
+#register p.lead {
+    font-size: 21px;
+    max-width: 62ch;
+    margin-top: 16px;
+    color: var(--tint);
+}
+
+/* --- Packages Grid (.packs) --- */
+.packs {
+       display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 48px;
+    border: 1px solid rgba(213, 226, 200, .35);
+}
+
+.pack {
+    padding: 30px 28px;
+    border-right: 1px solid rgba(213, 226, 200, .35);
+}
+
+.pack h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+.pack p {
+    color: var(--tint);
+    margin: 6px 0 14px;
+    font-size: 17px;
+}
+
+.pack ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.pack li {
+    position: relative;
+    padding: 4px 0;
+    color: var(--tint);
+    font-size: 17px;
+}
+
+.excl {
+    margin-top: 18px;
+    color: var(--tint);
+    font-size: 17px;
+}
+
+/* --- Form Layout & Fields --- */
+#stx-form {
+    background: var(--white);
+    color: var(--ink);
+    margin-top: 56px;
+    padding: 44px;
+    border-radius: 4px;
+}
+
+#stx-form h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--green);
+    margin-bottom: 6px;
+
+}
+
+#stx-form .note {
+    font-size: 16px;
+    color: var(--graphite);
+    margin-top: 4px;
+    margin-bottom: 32px;
+}
+
+.fgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 28px;
+}
+
+.fgrid .full {
+    grid-column: 1 / -1;
+}
+
+.fgrid label {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+}
+
+.fgrid label .opt {
+    font-weight: 400;
+    color: var(--graphite);
+}
+
+.fgrid input[type="text"],
+.fgrid input[type="email"],
+.fgrid input[type="tel"],
+.fgrid select,
+.fgrid textarea {
+    width: 100%;
+    font: inherit;
+    font-size: 17px;
+    padding: 12px 12px;
+    border: 1px solid #AEB5A6;
+    border-radius: 3px;
+    background: var(--white);
+    color: var(--ink);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fgrid input:focus,
+.fgrid select:focus,
+.fgrid textarea:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 2px rgba(56, 87, 35, 0.15);
+}
+
+.fgrid textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Fieldset & Checkboxes (.checks) */
+fieldset.full {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset.full legend {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+.checks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 26px;
+}
+
+.checks label {
+    font-weight: 400;
+    font-size: 17px;
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checks input[type="checkbox"] {
+    margin-top: 5px;
+    width: 17px;
+    height: 17px;
+    accent-color: var(--green);
+    cursor: pointer;
+}
+
+/* Submit Actions */
+.submit {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.submit .note {
+    margin: 0;
+    font-size: 16px;
+    color: var(--graphite);
+}
+
+.submit .note a {
+    color: var(--green);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.msg {
+    display: none;
+    margin-top: 22px;
+    padding: 16px 18px;
+    border-radius: 3px;
+    background: var(--wash);
+    border: 1px solid var(--green);
+    font-size: 17px;
+}
+

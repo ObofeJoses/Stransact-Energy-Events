@@ -377,3 +377,74 @@ main {
     font-style: italic;
 }
 
+/* --------------------------------FEATURE 4: Workshop Section------------------------------------------ */
+#workshop {
+    background-color: var(--wash);
+    padding: 80px 0;
+}
+
+/* --- Workshop Section Typography & Headings --- */
+#workshop h2 {
+   font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(32px, 4.2vw, 46px);
+    line-height: 1.12;
+    color: var(--deep);
+}
+
+#workshop p.lead {
+   font-size: 21px;
+    max-width: 62ch;
+    margin-top: 16px;
+    color: var(--ink);
+}
+
+/* --- Three-Column Grid (.three) --- */
+.three {
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    margin-top: 52px;
+}
+
+.three > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.three h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+/* --- List Items inside Columns --- */
+.three ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.three li {
+    position: relative;
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.5;
+    padding: 8px 0 8px 22px;
+
+}
+
+/* Custom Bullet Markers */
+.three li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 19px;
+    width: 10px;
+    height: 2px;
+    background: var(--green);
+}
+
